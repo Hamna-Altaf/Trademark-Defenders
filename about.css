@@ -1,0 +1,134 @@
+.about-us-main-img {
+    background-image: url('images/8_02.png');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.about-us-main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    margin-bottom: 130px;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-family: 'Prata', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    line-height: 60pt;
+    color: #002740;
+    margin: 0;
+}
+
+.description {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 82%;
+    margin-top: 0;
+}
+
+.about-us-img {
+    margin-top: 40px auto;
+    width: 80%;
+    height: 80%;
+}
+
+.clients-img {
+    margin-top: 40px;
+}
+
+.clients-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clients-description ul {
+    display: flex;
+    gap: 40px;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.clients-description li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.clients-description li .far {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-us-main-img {
+    height: 500px;
+    background-position: top;
+    padding: 20px;
+  }
+
+  .about-us-main .container {
+    margin: 60px auto;
+    margin-bottom: 80px;
+    padding: 0 20px;
+  }
+
+  .main-heading {
+    font-size: 42px;
+    line-height: 40pt;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .clients-img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .clients-description {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .clients-description ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .clients-description li {
+    font-size: 16px;
+  }
+
+  .clients-description li .far {
+    margin-right: 6px;
+  }
+}

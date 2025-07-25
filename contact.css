@@ -1,0 +1,180 @@
+.contact-main-img {
+    background-image: url('images/contact_01.png');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    gap: 20px;
+}
+
+.text-input-div {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.text-input-div,
+.contact-info-div {
+    flex: 1;
+    width: 67%;
+
+}
+
+.get-in-touch-heading {
+    font-family: 'Prata', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #002740;
+    margin-bottom: 30px;
+}
+
+.name-email-div {
+    display: flex;
+    gap: 20px;
+}
+
+input[name="name"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+input[name="business name"] {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+input[name="message"] {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100px;
+}
+
+.send-message-btn {
+    background-color: #fff406;
+    color: #002740;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Prata', sans-serif;
+    line-height: 16px;
+    text-align: center;
+    width: 200px;
+}
+
+.contact-info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.call-heading,
+.email-heading {
+    font-size: 18px;
+    font-family: 'Prata', sans-serif;
+    color: #fac505fd;
+    margin-top: 10px;
+}
+
+.phone-text {
+    font-family: 'Prata', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #002740;
+    margin-top: 0;
+}
+
+.email-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #002740;
+    font-weight: normal;
+}
+
+.call-div,
+.email-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.email-div,
+.contact-icons-div {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-main-img {
+        height: 500px;
+        background-position: top;
+    }
+
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .text-input-div {
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 40px
+    }
+
+    .get-in-touch-heading {
+        width: 100%;
+        line-height: 1.2;
+        font-size: 42px;
+    }
+
+    .contact-info-div {
+        margin-bottom: 0;
+    }
+
+    .text-input-div,
+    .contact-info-div {
+        width: 100%;
+    }
+
+    .name-email-div {
+        flex-direction: column;
+        gap: 0;
+
+    }
+    .send-message-btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
