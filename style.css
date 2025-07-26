@@ -715,6 +715,7 @@ footer .container {
 .line {
   height: 25px;
   width: 2px;
+  margin-top: 7px;
   background-color: white;
 }
 
@@ -769,6 +770,8 @@ footer .container {
   text-align: center;
 }
 
+
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -786,17 +789,18 @@ footer .container {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 250px;
+    min-width: 320px;
     height: 100vh;
     background-color: #002740;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: flex-start;
-    padding: 40px 20px;
+    padding: 40px 10px;
     transition: left 0.3s ease-in-out;
     z-index: 1000;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
+    
   }
 
   .nav-bar.active ul,
@@ -804,10 +808,20 @@ footer .container {
     left: 0;
   }
 
+ .break {
+   background-color: #fff406;
+  height: 1px;
+  width: 290px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+ }
   .nav-bar ul li a {
     color: #fff406;
     font-weight: 400;
     top: 0;
+    margin: 0;
+    margin-left: 10px;
   }
 
   .hamburger {
@@ -914,9 +928,9 @@ footer .container {
 
   .FAQs-div {
     max-width: 90%;
-    margin-left: 80px;
+    margin-left: 30px;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
   }
 
   .FAQs-overlay {
@@ -936,10 +950,26 @@ footer .container {
     flex-direction: row;
     gap: 10px;
   }
+  .footer-nav {
+    gap: 3px;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 5px;
+  }
+  .line {
+    margin-top: 5px;
+  }
 
   .testimonial-main-heading {
     font-size: 28px;
     margin: 20px;
+  }
+  .left-arrow {
+    left: 0;
+   
+  }
+  .right-arrow {
+    right: 0;
   }
 
   .buttons {
@@ -950,11 +980,17 @@ footer .container {
 
   .write-review-btn,
   .view-all-btn,
-  .talk-to-advisor-btn,
-  .ask-about-protection-plan-btn {
+  .talk-to-advisor-btn {
     width: 100%;
     max-width: 100%;
   }
+    .ask-about-protection-plan-btn {
+      width: 350px;
+    padding: 16px;
+    font-size: 16px;
+    min-width: unset;
+
+    }
 
   .privacy-info-div h3 {
     font-size: 32px;
@@ -967,5 +1003,8 @@ footer .container {
   .nav-bar ul li a:hover {
     text-decoration: underline;
     text-decoration-color: #fff406;
+  }
+  .copyright {
+    font-size: 18px;
   }
 }
